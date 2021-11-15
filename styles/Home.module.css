@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: grey
+  background-color: white;
 }
 
 .main {
@@ -15,6 +15,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: grey;
 }
 
 .footer {
@@ -24,7 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red
+  background-color: grey
 }
 
 .footer a {
