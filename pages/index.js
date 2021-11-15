@@ -20,7 +20,7 @@ export default function Home({ articles }) {
       <main className={styles.main}>
         <div className="prose lg:prose-xl mt-6">
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js! QA DB-1701</a>
+          Welcome to <a href="https://nextjs.org">Next.js! QA DB-1701-2</a>
         </h1>
 
         <p className={styles.description}>
