@@ -8,7 +8,7 @@ import styles from '../../styles/Home.module.css';
 const drupalUrl = process.env.backendUrl;
 
 export default function Home({ article }) {
-  const imgSrc = drupalUrl + article.field_media_image.field_media_image.uri.url;
+  const imgSrc = drupalUrl + article.field_media_image?.field_media_image?.uri?.url;
   return (
     <div className={styles.container}>
       <Head>
@@ -79,7 +79,7 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: true,
+    fallback: false,
   }
 }
 
