@@ -65,7 +65,8 @@ export default function Home({ articles }) {
 export async function getServerSideProps(context) {
   // TODO - determine apiRoot from environment variables
   const store = new DrupalState({
-    apiRoot: `${drupalUrl}/en/jsonapi`,
+    apiBase: drupalUrl,
+    apiPrefix: 'en/jsonapi',
   });
 
   store.params.addInclude(['field_media_image.field_media_image']);
@@ -78,7 +79,7 @@ export async function getServerSideProps(context) {
   // A duplicate resource to ensure that keys are de-duped.
   await store.getObject({
     objectName: 'node--article',
-    id: 'e481c1f5-e475-4ce6-8c15-a0c2c8e5a15f',
+    id: articles[0].id,
     query: `{
       id
       title

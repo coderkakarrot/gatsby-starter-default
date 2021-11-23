@@ -17,6 +17,8 @@ cd decoupled-drupal-frontend-demo && npm install
 BACKEND_URL=
 IMG_DOMAIN=
 PREVIEW_SECRET=
+CLIENT_ID=
+CLIENT_SECRET=
 ```
 
 4. run `lando start`
@@ -32,3 +34,7 @@ including:
 * addSurrogateKeyHeader()
 
 Full documentation can be found at: https://github.com/pantheon-systems/decoupled-node-sdk
+
+## Example Pages
+
+* examples/auth-api - a simple example that sources data from an endpoint that requires authorization.
