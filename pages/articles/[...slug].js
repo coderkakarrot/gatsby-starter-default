@@ -52,7 +52,8 @@ export default function Home({ article }) {
 export async function getStaticPaths() {
   // TODO - determine this from environment variables
   const store = new DrupalState({
-    apiRoot: `${drupalUrl}/en/jsonapi/`,
+    apiBase: drupalUrl,
+    apiPrefix: 'en/jsonapi',
   });
 
   const articles = await store
@@ -86,7 +87,8 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   // TODO - determine apiRoot from environment variables
   const store = new DrupalState({
-    apiRoot: `${drupalUrl}/en/jsonapi`,
+    apiBase: drupalUrl,
+    apiPrefix: 'en/jsonapi',
   });
 
   const slug = `/articles/${context.params.slug.join('/')}`;
