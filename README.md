@@ -38,3 +38,5 @@ Full documentation can be found at: https://github.com/pantheon-systems/decouple
 ## Example Pages
 
 * examples/auth-api - a simple example that sources data from an endpoint that requires authorization.
+
+* Test DB-1148
