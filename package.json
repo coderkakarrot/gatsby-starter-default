@@ -10,7 +10,7 @@
     "postinstall": "cp -n .env.dev .env.local || true"
   },
   "dependencies": {
-    "@pantheon/decoupled-node-sdk": "git+https://github.com/backlineint/decoupled-node-sdk.git#db-1056",
+    "@pantheon/decoupled-node-sdk": "git+https://github.com/pantheon-systems/decoupled-node-sdk.git",
     "@tailwindcss/typography": "^0.4.1",
     "dotenv": "^10.0.0",
     "next": "^11.1.2",
