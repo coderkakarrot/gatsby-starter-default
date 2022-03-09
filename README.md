@@ -39,4 +39,4 @@ Full documentation can be found at: https://github.com/pantheon-systems/decouple
 
 * examples/auth-api - a simple example that sources data from an endpoint that requires authorization.
 
-fsfds Test DB-1108 wjchengqa4 sdsdfssesfssdfsdfvd
+fsfds Test DB-1108 wjchengqa4
